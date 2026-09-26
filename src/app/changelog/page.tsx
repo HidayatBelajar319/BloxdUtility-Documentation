@@ -136,6 +136,7 @@ export default function ChangelogPage() {
               <Link href="/api" className="text-sm font-medium text-[var(--text)] hover:text-[var(--primary)] transition-colors">API Reference</Link>
               <Link href="/guides" className="text-sm font-medium text-[var(--text)] hover:text-[var(--primary)] transition-colors">Guides</Link>
               <Link href="/bloxdbench" className="text-sm font-medium text-[var(--text)] hover:text-[var(--primary)] transition-colors">BloxdBench</Link>
+              <Link href="/ai" className="text-sm font-medium text-[var(--text)] hover:text-[var(--primary)] transition-colors">Bloxd AI</Link>
               <Link href="/platform" className="text-sm font-medium text-[var(--text)] hover:text-[var(--primary)] transition-colors">Platform</Link>
               <Link href="/changelog" className="text-sm font-medium text-[var(--primary)] font-semibold">Changelog</Link>
               <a href="https://bloxdutility.netlify.app/" target="_blank" rel="noopener noreferrer" className="text-sm font-medium text-[var(--text)] hover:text-[var(--primary)] transition-colors">Main Website</a>

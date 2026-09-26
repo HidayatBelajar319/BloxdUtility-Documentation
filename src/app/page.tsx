@@ -33,6 +33,7 @@ export default function HomePage() {
               <Link href="/api" className="text-sm font-medium text-[var(--text)] hover:text-[var(--primary)] transition-colors">API Reference</Link>
               <Link href="/guides" className="text-sm font-medium text-[var(--text)] hover:text-[var(--primary)] transition-colors">Guides</Link>
               <Link href="/bloxdbench" className="text-sm font-medium text-[var(--text)] hover:text-[var(--primary)] transition-colors">BloxdBench</Link>
+              <Link href="/ai" className="text-sm font-medium text-[var(--text)] hover:text-[var(--primary)] transition-colors">Bloxd AI</Link>
               <Link href="/platform" className="text-sm font-medium text-[var(--text)] hover:text-[var(--primary)] transition-colors">Platform</Link>
               <Link href="/changelog" className="text-sm font-medium text-[var(--text)] hover:text-[var(--primary)] transition-colors">Changelog</Link>
               <a href="https://bloxdutility.netlify.app/" target="_blank" rel="noopener noreferrer" className="text-sm font-medium text-[var(--text)] hover:text-[var(--primary)] transition-colors">Main Website</a>
@@ -184,6 +185,30 @@ export default function HomePage() {
             <Link href="/platform/data" className="p-4 bg-[var(--sidebar-bg)] border border-[var(--border)] rounded-lg text-center hover:border-[var(--primary)] transition-colors">
               <p className="font-semibold">Data Pipeline</p>
               <p className="text-sm text-[var(--text)]/60">Auto-discovery</p>
+            </Link>
+            <Link href="/ai" className="p-4 bg-[var(--sidebar-bg)] border border-[var(--border)] rounded-lg text-center hover:border-[var(--primary)] transition-colors">
+              <p className="font-semibold">Bloxd AI</p>
+              <p className="text-sm text-[var(--text)]/60">Live chat, no key</p>
+            </Link>
+            <Link href="/platform/home-dashboard" className="p-4 bg-[var(--sidebar-bg)] border border-[var(--border)] rounded-lg text-center hover:border-[var(--primary)] transition-colors">
+              <p className="font-semibold">Home Dashboard</p>
+              <p className="text-sm text-[var(--text)]/60">Live API stats</p>
+            </Link>
+            <Link href="/platform/dev-tools" className="p-4 bg-[var(--sidebar-bg)] border border-[var(--border)] rounded-lg text-center hover:border-[var(--primary)] transition-colors">
+              <p className="font-semibold">Developer Tools</p>
+              <p className="text-sm text-[var(--text)]/60">Eight generators</p>
+            </Link>
+            <Link href="/platform/modrinth-hub" className="p-4 bg-[var(--sidebar-bg)] border border-[var(--border)] rounded-lg text-center hover:border-[var(--primary)] transition-colors">
+              <p className="font-semibold">Modrinth Hub</p>
+              <p className="text-sm text-[var(--text)]/60">Mods &amp; packs</p>
+            </Link>
+            <Link href="/platform/ai-workspace" className="p-4 bg-[var(--sidebar-bg)] border border-[var(--border)] rounded-lg text-center hover:border-[var(--primary)] transition-colors">
+              <p className="font-semibold">AI Workspace</p>
+              <p className="text-sm text-[var(--text)]/60">Chat + editor</p>
+            </Link>
+            <Link href="/platform/site-changelog" className="p-4 bg-[var(--sidebar-bg)] border border-[var(--border)] rounded-lg text-center hover:border-[var(--primary)] transition-colors">
+              <p className="font-semibold">Site Changelog</p>
+              <p className="text-sm text-[var(--text)]/60">Release history</p>
             </Link>
           </div>
         </section>

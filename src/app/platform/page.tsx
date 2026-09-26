@@ -58,6 +58,91 @@ const features = [
     ],
   },
   {
+    title: 'Home Dashboard',
+    href: '/platform/home-dashboard',
+    accent: 'text-blue-500',
+    accentBg: 'bg-blue-500/10',
+    accentHover: 'group-hover:bg-blue-500/20',
+    badge: 'bg-blue-500/10 text-blue-600 dark:text-blue-400',
+    live: 'https://bloxdutility.netlify.app/home',
+    liveLabel: '/home',
+    description:
+      'The landing screen of the main site. Live API-function, block, item, and callback counts read from the GitHub contents API, a tip carousel, a click-to-copy block and item search, a function spotlight, and a mega-prompt built from every documentation file.',
+    tech: ['app/home/page.tsx', 'api.github.com', 'raw.githubusercontent.com'],
+    related: [
+      { label: 'Data Pipeline', href: '/platform/data' },
+      { label: 'Full Documentation', href: '/documentation' },
+    ],
+  },
+  {
+    title: 'Developer Tools',
+    href: '/platform/dev-tools',
+    accent: 'text-amber-500',
+    accentBg: 'bg-amber-500/10',
+    accentHover: 'group-hover:bg-amber-500/20',
+    badge: 'bg-amber-500/10 text-amber-600 dark:text-amber-400',
+    live: 'https://bloxdutility.netlify.app/tools',
+    liveLabel: '/tools',
+    description:
+      'Eight Bloxd.io generators — schematic converter, plugin auto-merger, QTE, particles, GUI, texture pack, command studio, and mob maker — described by one data table where each row carries its own route, inline SVG icon, and colour.',
+    tech: ['app/tools/page.tsx', 'next/link', 'inline SVG path data'],
+    related: [
+      { label: 'QTE', href: '/guides/qte' },
+      { label: 'Mobs', href: '/guides/mobs' },
+    ],
+  },
+  {
+    title: 'Modrinth Hub',
+    href: '/platform/modrinth-hub',
+    accent: 'text-purple-500',
+    accentBg: 'bg-purple-500/10',
+    accentHover: 'group-hover:bg-purple-500/20',
+    badge: 'bg-purple-500/10 text-purple-600 dark:text-purple-400',
+    live: 'https://bloxdutility.netlify.app/modrinth',
+    liveLabel: '/modrinth',
+    description:
+      'The community resource hub, taxonomised into three classes — mods, texture packs, and server plugins — with assets resolved at runtime from Bloxdy/texture-packs instead of being bundled with the site.',
+    tech: ['app/modrinth/page.tsx', 'Bloxdy/texture-packs', 'next/link'],
+    related: [
+      { label: 'Developer Tools', href: '/platform/dev-tools' },
+      { label: 'BloxdBench', href: '/platform/bloxdbench' },
+    ],
+  },
+  {
+    title: 'AI Workspace',
+    href: '/platform/ai-workspace',
+    accent: 'text-emerald-500',
+    accentBg: 'bg-emerald-500/10',
+    accentHover: 'group-hover:bg-emerald-500/20',
+    badge: 'bg-emerald-500/10 text-emerald-600 dark:text-emerald-400',
+    live: 'https://bloxdutility.netlify.app/workspace',
+    liveLabel: '/workspace',
+    description:
+      'The three-pane build surface: chat on the left, a code/preview deck on the right, all sharing one persisted Zustand store. Prompts become files, files render in a real iframe sandbox, and the split becomes tabs under 1024px.',
+    tech: ['Zustand persist', 'lucide-react', 'iframe srcDoc'],
+    related: [
+      { label: 'Free AI system', href: '/platform/ai' },
+      { label: 'Bloxd AI chat', href: '/ai' },
+    ],
+  },
+  {
+    title: 'Site Changelog',
+    href: '/platform/site-changelog',
+    accent: 'text-indigo-500',
+    accentBg: 'bg-indigo-500/10',
+    accentHover: 'group-hover:bg-indigo-500/20',
+    badge: 'bg-indigo-500/10 text-indigo-600 dark:text-indigo-400',
+    live: 'https://bloxdutility.netlify.app/changelog',
+    liveLabel: '/changelog',
+    description:
+      'The release history of the main site, written as one Markdown string and rendered with react-markdown. A custom h2 renderer lifts "v2.3 — Title" into a version badge, and the newest five entries are mirrored on the dashboard.',
+    tech: ['react-markdown', 'remark-gfm', 'CHANGELOG_MARKDOWN'],
+    related: [
+      { label: 'Home Dashboard', href: '/platform/home-dashboard' },
+      { label: 'Docs changelog', href: '/changelog' },
+    ],
+  },
+  {
     title: 'Data Pipeline',
     href: '/platform/data',
     accent: 'text-orange-500',
@@ -106,6 +191,7 @@ export default function PlatformPage() {
               <Link href="/api" className="text-sm font-medium text-[var(--text)] hover:text-[var(--primary)] transition-colors">API Reference</Link>
               <Link href="/guides" className="text-sm font-medium text-[var(--text)] hover:text-[var(--primary)] transition-colors">Guides</Link>
               <Link href="/bloxdbench" className="text-sm font-medium text-[var(--text)] hover:text-[var(--primary)] transition-colors">BloxdBench</Link>
+              <Link href="/ai" className="text-sm font-medium text-[var(--text)] hover:text-[var(--primary)] transition-colors">Bloxd AI</Link>
               <Link href="/platform" className="text-sm font-medium text-[var(--primary)] font-semibold">Platform</Link>
               <Link href="/changelog" className="text-sm font-medium text-[var(--text)] hover:text-[var(--primary)] transition-colors">Changelog</Link>
               <a href="https://bloxdutility.netlify.app/" target="_blank" rel="noopener noreferrer" className="text-sm font-medium text-[var(--text)] hover:text-[var(--primary)] transition-colors">Main Website</a>
@@ -129,14 +215,15 @@ export default function PlatformPage() {
         <section className="mb-16">
           <h1 className="text-4xl sm:text-5xl font-black tracking-tight mb-4">Our Platform Features</h1>
           <p className="text-xl text-[var(--text)]/70 max-w-3xl">
-            These are the systems we build and run on the Players platform — the code editor, the voxel studio, the free AI
-            layer, and the data pipeline that feeds all of them. Every page here explains what the feature is, how it works,
-            and the exact code and libraries that power it.
+            These are the systems we build and run on the Players platform — the dashboard, the developer tools, the resource
+            hub, the AI workspace, the release history, and the code editor, voxel studio, free AI layer, and data pipeline
+            that feed them. Every page here explains what the feature is, how it works, and the exact code and libraries that
+            power it.
           </p>
         </section>
 
         <section className="mb-16">
-          <h2 className="text-2xl font-bold mb-6">The four features</h2>
+          <h2 className="text-2xl font-bold mb-6">Every feature</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {features.map((feature) => (
               <div key={feature.title} className="p-6 bg-[var(--sidebar-bg)] border border-[var(--border)] rounded-xl">
@@ -206,6 +293,23 @@ export default function PlatformPage() {
                 See <Link href="/platform/ai" className="text-[var(--primary)] hover:underline font-semibold">Free AI system</Link>.
               </p>
             </div>
+            <div className="p-6 bg-[var(--sidebar-bg)] border border-[var(--border)] rounded-xl">
+              <h3 className="text-lg font-bold mb-2">4 — The workspace sits on top</h3>
+              <p className="text-[var(--text)]/70">
+                The AI Workspace wires the chat, the editor, and a sandboxed preview to one persisted store, so a prompt lands
+                as a file. The <Link href="/platform/dev-tools" className="text-[var(--primary)] hover:underline font-semibold">developer tools</Link> and the{' '}
+                <Link href="/platform/modrinth-hub" className="text-[var(--primary)] hover:underline font-semibold">Modrinth hub</Link> feed it from either end —
+                generators produce the code, the hub distributes the packs.
+              </p>
+            </div>
+            <div className="p-6 bg-[var(--sidebar-bg)] border border-[var(--border)] rounded-xl">
+              <h3 className="text-lg font-bold mb-2">5 — The dashboard publishes it all</h3>
+              <p className="text-[var(--text)]/70">
+                The <Link href="/platform/home-dashboard" className="text-[var(--primary)] hover:underline font-semibold">Home Dashboard</Link> counts the live API surface
+                and mirrors the newest releases from the <Link href="/platform/site-changelog" className="text-[var(--primary)] hover:underline font-semibold">changelog</Link>,
+                so what changed and how big the API is are both visible without a navigation.
+              </p>
+            </div>
           </div>
         </section>
 
@@ -227,6 +331,18 @@ export default function PlatformPage() {
             <a href="https://bloxdutility.netlify.app/documentation" target="_blank" rel="noopener noreferrer" className="p-4 bg-[var(--sidebar-bg)] border border-[var(--border)] rounded-lg text-center hover:border-[var(--primary)] transition-colors">
               <p className="font-semibold">Live Docs</p>
               <p className="text-sm text-[var(--text)]/60">Auto-synced</p>
+            </a>
+            <a href="https://bloxdutility.netlify.app/home" target="_blank" rel="noopener noreferrer" className="p-4 bg-[var(--sidebar-bg)] border border-[var(--border)] rounded-lg text-center hover:border-[var(--primary)] transition-colors">
+              <p className="font-semibold">Dashboard</p>
+              <p className="text-sm text-[var(--text)]/60">Live stats</p>
+            </a>
+            <a href="https://bloxdutility.netlify.app/tools" target="_blank" rel="noopener noreferrer" className="p-4 bg-[var(--sidebar-bg)] border border-[var(--border)] rounded-lg text-center hover:border-[var(--primary)] transition-colors">
+              <p className="font-semibold">Dev Tools</p>
+              <p className="text-sm text-[var(--text)]/60">Eight generators</p>
+            </a>
+            <a href="https://bloxdutility.netlify.app/workspace" target="_blank" rel="noopener noreferrer" className="p-4 bg-[var(--sidebar-bg)] border border-[var(--border)] rounded-lg text-center hover:border-[var(--primary)] transition-colors">
+              <p className="font-semibold">Workspace</p>
+              <p className="text-sm text-[var(--text)]/60">Chat + editor</p>
             </a>
           </div>
         </section>

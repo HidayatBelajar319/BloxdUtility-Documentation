@@ -568,6 +568,7 @@ export default function DocumentationPage() {
               <Link href="/api" className="text-sm font-medium hover:text-[var(--primary)]">API</Link>
               <Link href="/guides" className="text-sm font-medium hover:text-[var(--primary)]">Guides</Link>
               <Link href="/bloxdbench" className="text-sm font-medium hover:text-[var(--primary)]">BloxdBench</Link>
+              <Link href="/ai" className="text-sm font-medium hover:text-[var(--primary)]">Bloxd AI</Link>
               <Link href="/platform" className="text-sm font-medium hover:text-[var(--primary)]">Platform</Link>
               <Link href="/changelog" className="text-sm font-medium hover:text-[var(--primary)]">Changelog</Link>
               <a href="https://bloxdutility.netlify.app/" target="_blank" rel="noopener noreferrer" className="text-sm font-medium hover:text-[var(--primary)]">Main Website</a>
