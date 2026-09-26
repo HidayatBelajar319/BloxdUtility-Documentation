@@ -12,6 +12,8 @@
   --nav-hover: #ebeff2;
   --nav-active-bg: #0969da;
   --nav-active-text: #ffffff;
+  --primary: #3b82f6;
+  --primary-hover: #2563eb;
   --code-bg: #f6f8fa;
   --table-header-bg: #f6f8fa;
   --name-item-bg: #f6f8fa;
@@ -30,6 +32,8 @@
   --nav-hover: #21262d;
   --nav-active-bg: #1f6feb;
   --nav-active-text: #ffffff;
+  --primary: #58a6ff;
+  --primary-hover: #79c0ff;
   --code-bg: #161b22;
   --table-header-bg: #161b22;
   --name-item-bg: #161b22;

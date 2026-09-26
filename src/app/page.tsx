@@ -21,32 +21,6 @@ export default function HomePage() {
 
   return (
     <div className="min-h-screen bg-[var(--bg)] text-[var(--text)] transition-colors duration-300">
-      <style jsx global>{`
-        :root {
-          --bg: #ffffff;
-          --text: #1f2328;
-          --sidebar-bg: #f6f8fa;
-          --border: #d0d7de;
-          --nav-hover: #ebeff2;
-          --nav-active-bg: #0969da;
-          --nav-active-text: #ffffff;
-          --primary: #3b82f6;
-          --primary-hover: #2563eb;
-        }
-        .dark {
-          --bg: #0d1117;
-          --text: #e6edf3;
-          --sidebar-bg: #161b22;
-          --border: #30363d;
-          --nav-hover: #21262d;
-          --nav-active-bg: #1f6feb;
-          --nav-active-text: #ffffff;
-          --primary: #58a6ff;
-          --primary-hover: #79c0ff;
-        }
-        body { font-family: 'Inter', sans-serif; }
-      `}</style>
-
       <header className="border-b border-[var(--border)] bg-[var(--sidebar-bg)] sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
@@ -100,21 +74,21 @@ export default function HomePage() {
         <section className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20">
           <Link href="/documentation" className="group p-6 bg-[var(--sidebar-bg)] border border-[var(--border)] rounded-xl hover:border-[var(--primary)] hover:shadow-lg hover:shadow-[var(--primary)]/10 transition-all duration-300">
             <div className="w-12 h-12 bg-[var(--primary)]/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-[var(--primary)]/20 transition-colors">
-              <svg className="w-6 h-6 text-[var(--primary)]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" /></path></svg>
+              <svg className="w-6 h-6 text-[var(--primary)]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" /></svg>
             </div>
             <h3 className="text-xl font-bold mb-2">Full Documentation</h3>
             <p className="text-[var(--text)]/70">Browse all 14 documentation files with search, bookmarks, and table of contents.</p>
           </Link>
           <Link href="/api" className="group p-6 bg-[var(--sidebar-bg)] border border-[var(--border)] rounded-xl hover:border-[var(--primary)] hover:shadow-lg hover:shadow-[var(--primary)]/10 transition-all duration-300">
             <div className="w-12 h-12 bg-emerald-500/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-emerald-500/20 transition-colors">
-              <svg className="w-6 h-6 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" /></path></svg>
+              <svg className="w-6 h-6 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" /></svg>
             </div>
             <h3 className="text-xl font-bold mb-2">API Reference</h3>
             <p className="text-[var(--text)]/70">Quick reference for all functions, callbacks, blocks, items, and variables.</p>
           </Link>
           <Link href="/guides" className="group p-6 bg-[var(--sidebar-bg)] border border-[var(--border)] rounded-xl hover:border-[var(--primary)] hover:shadow-lg hover:shadow-[var(--primary)]/10 transition-all duration-300">
             <div className="w-12 h-12 bg-purple-500/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-purple-500/20 transition-colors">
-              <svg className="w-6 h-6 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></path></svg>
+              <svg className="w-6 h-6 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
             </div>
             <h3 className="text-xl font-bold mb-2">Guides & Tutorials</h3>
             <p className="text-[var(--text)]/70">Step-by-step guides for common Bloxd.io development tasks.</p>
@@ -126,28 +100,28 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="p-6 bg-[var(--sidebar-bg)] border border-[var(--border)] rounded-xl">
               <div className="w-10 h-10 bg-blue-500/10 rounded-lg flex items-center justify-center mb-3">
-                <svg className="w-5 h-5 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></path></svg>
+                <svg className="w-5 h-5 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
               </div>
               <h4 className="font-bold mb-1">Auto-Synced</h4>
               <p className="text-sm text-[var(--text)]/70">Always up-to-date with the official GitHub repository</p>
             </div>
             <div className="p-6 bg-[var(--sidebar-bg)] border border-[var(--border)] rounded-xl">
               <div className="w-10 h-10 bg-emerald-500/10 rounded-lg flex items-center justify-center mb-3">
-                <svg className="w-5 h-5 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></path></svg>
+                <svg className="w-5 h-5 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
               </div>
               <h4 className="font-bold mb-1">Full-Text Search</h4>
               <p className="text-sm text-[var(--text)]/70">Instant search across all documentation with highlight</p>
             </div>
             <div className="p-6 bg-[var(--sidebar-bg)] border border-[var(--border)] rounded-xl">
               <div className="w-10 h-10 bg-purple-500/10 rounded-lg flex items-center justify-center mb-3">
-                <svg className="w-5 h-5 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" /></path></svg>
+                <svg className="w-5 h-5 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" /></svg>
               </div>
               <h4 className="font-bold mb-1">Bookmarks & TOC</h4>
               <p className="text-sm text-[var(--text)]/70">Bookmark sections and navigate with table of contents</p>
             </div>
             <div className="p-6 bg-[var(--sidebar-bg)] border border-[var(--border)] rounded-xl">
               <div className="w-10 h-10 bg-orange-500/10 rounded-lg flex items-center justify-center mb-3">
-                <svg className="w-5 h-5 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" /></path></svg>
+                <svg className="w-5 h-5 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" /></svg>
               </div>
               <h4 className="font-bold mb-1">Export & Print</h4>
               <p className="text-sm text-[var(--text)]/70">Export as Markdown or print for offline reference</p>

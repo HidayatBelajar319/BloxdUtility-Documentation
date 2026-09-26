@@ -36,32 +36,6 @@ export default function GuidesPage() {
 
   return (
     <div className="min-h-screen bg-[var(--bg)] text-[var(--text)] transition-colors duration-300">
-      <style jsx global>{`
-        :root {
-          --bg: #ffffff;
-          --text: #1f2328;
-          --sidebar-bg: #f6f8fa;
-          --border: #d0d7de;
-          --nav-hover: #ebeff2;
-          --nav-active-bg: #0969da;
-          --nav-active-text: #ffffff;
-          --primary: #3b82f6;
-          --primary-hover: #2563eb;
-        }
-        .dark {
-          --bg: #0d1117;
-          --text: #e6edf3;
-          --sidebar-bg: #161b22;
-          --border: #30363d;
-          --nav-hover: #21262d;
-          --nav-active-bg: #1f6feb;
-          --nav-active-text: #ffffff;
-          --primary: #58a6ff;
-          --primary-hover: #79c0ff;
-        }
-        body { font-family: 'Inter', sans-serif; }
-      `}</style>
-
       <header className="border-b border-[var(--border)] bg-[var(--sidebar-bg)] sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
