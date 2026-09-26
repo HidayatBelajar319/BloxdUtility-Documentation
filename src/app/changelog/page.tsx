@@ -21,10 +21,41 @@ export default function ChangelogPage() {
 
   const releases = [
     {
-      version: 'v1.3',
+      version: 'v1.5',
       date: 'September 26, 2026',
       tag: 'Newest',
       tagClass: 'bg-green-500/10 text-green-600 dark:text-green-400',
+      summary: 'Our Platform Features — docs for our own tooling, not the Bloxd.io API.',
+      added: [
+        'Platform section at /platform documenting our own features and the code behind them',
+        'Four feature pages: /platform/code-lab, /platform/bloxdbench, /platform/ai, and /platform/data',
+        'Platform link added to the primary navigation on all pages, placed after BloxdBench',
+        'Platform quick-link cards added to the home page quick-links grid',
+      ],
+      changed: [
+        'Navigation order is now Documentation, API Reference, Guides, BloxdBench, Platform, Changelog',
+        'The new pages use the existing design tokens, so they inherit both themes automatically',
+      ],
+    },
+    {
+      version: 'v1.4',
+      date: 'September 26, 2026',
+      tag: 'Build fix',
+      tagClass: 'bg-blue-500/10 text-blue-600 dark:text-blue-400',
+      summary: 'Netlify build green, and the README documents routes, auto-discovery, and deploy.',
+      added: [
+        'README.md documenting routes, the auto-discovery architecture, and the Netlify deploy',
+      ],
+      changed: [
+        'Per-page style blocks moved into src/app/globals.css',
+        '17 stray closing tags that broke the JSX compile were removed',
+      ],
+    },
+    {
+      version: 'v1.3',
+      date: 'September 26, 2026',
+      tag: null,
+      tagClass: '',
       summary: 'The changelog page itself, plus Changelog links in the nav on every page.',
       added: [
         'Changelog page at /changelog listing every release of the documentation site',
@@ -105,6 +136,7 @@ export default function ChangelogPage() {
               <Link href="/api" className="text-sm font-medium text-[var(--text)] hover:text-[var(--primary)] transition-colors">API Reference</Link>
               <Link href="/guides" className="text-sm font-medium text-[var(--text)] hover:text-[var(--primary)] transition-colors">Guides</Link>
               <Link href="/bloxdbench" className="text-sm font-medium text-[var(--text)] hover:text-[var(--primary)] transition-colors">BloxdBench</Link>
+              <Link href="/platform" className="text-sm font-medium text-[var(--text)] hover:text-[var(--primary)] transition-colors">Platform</Link>
               <Link href="/changelog" className="text-sm font-medium text-[var(--primary)] font-semibold">Changelog</Link>
               <a href="https://bloxdutility.netlify.app/" target="_blank" rel="noopener noreferrer" className="text-sm font-medium text-[var(--text)] hover:text-[var(--primary)] transition-colors">Main Website</a>
             </nav>

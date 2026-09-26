@@ -6,6 +6,26 @@ versioning follows [Semantic Versioning](https://semver.org).
 
 ---
 
+## [1.5.0] - 2026-09-26
+
+### ✨ Added
+- 🧩 New **Our Platform Features** section — documentation of our own platform (not the Bloxd.io API): what each feature is, how it works, and the code behind it.
+- 📄 Four new pages under [`/platform`](https://bloxdutility-documentation.netlify.app/platform): **Code Lab** (Monaco + code-api autocomplete + CodexMind), **BloxdBench** (Three.js voxel studio, internet-loaded assets), **Free AI system** (Puter.js default, BYOK fallbacks), and **Data pipeline** (code-api auto-discovery, search/TOC/bookmarks/export, global CSS theming).
+- 🧭 **Platform** link added to the primary navigation on every page, placed after BloxdBench.
+- 🔗 Platform quick-link cards added to the home page quick-links grid.
+
+### 🔧 Changed
+- 🧭 Navigation order is now Documentation → API Reference → Guides → BloxdBench → Platform → Changelog across the whole site.
+- 🎨 The new pages use the existing design tokens only, so they inherit light and dark themes with no extra styling.
+
+---
+
+## [1.4.0] - 2026-09-26
+
+### 🔧 Fixed
+- 🟢 **Netlify build green** — moved all per-page style blocks into `src/app/globals.css` and removed 17 stray SVG closing tags breaking the JSX compile.
+- 📖 Added `README.md` documenting routes, auto-discovery architecture, and Netlify deploy.
+
 ## [1.3.0] - 2026-09-26
 
 ### ✨ Added
@@ -69,6 +89,8 @@ versioning follows [Semantic Versioning](https://semver.org).
 
 If a link claims to be part of Bloxd Utility, verify it against the accounts above before using it.
 
+[1.5.0]: https://bloxdutility-documentation.netlify.app/changelog
+[1.4.0]: https://bloxdutility-documentation.netlify.app/changelog
 [1.3.0]: https://bloxdutility-documentation.netlify.app/changelog
 [1.2.0]: https://bloxdutility-documentation.netlify.app/changelog
 [1.1.0]: https://bloxdutility-documentation.netlify.app/changelog

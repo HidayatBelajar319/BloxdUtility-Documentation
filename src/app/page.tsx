@@ -33,6 +33,7 @@ export default function HomePage() {
               <Link href="/api" className="text-sm font-medium text-[var(--text)] hover:text-[var(--primary)] transition-colors">API Reference</Link>
               <Link href="/guides" className="text-sm font-medium text-[var(--text)] hover:text-[var(--primary)] transition-colors">Guides</Link>
               <Link href="/bloxdbench" className="text-sm font-medium text-[var(--text)] hover:text-[var(--primary)] transition-colors">BloxdBench</Link>
+              <Link href="/platform" className="text-sm font-medium text-[var(--text)] hover:text-[var(--primary)] transition-colors">Platform</Link>
               <Link href="/changelog" className="text-sm font-medium text-[var(--text)] hover:text-[var(--primary)] transition-colors">Changelog</Link>
               <a href="https://bloxdutility.netlify.app/" target="_blank" rel="noopener noreferrer" className="text-sm font-medium text-[var(--text)] hover:text-[var(--primary)] transition-colors">Main Website</a>
             </nav>
@@ -163,6 +164,26 @@ export default function HomePage() {
             <Link href="/bloxdbench" className="p-4 bg-[var(--sidebar-bg)] border border-[var(--border)] rounded-lg text-center hover:border-[var(--primary)] transition-colors">
               <p className="font-semibold">BloxdBench</p>
               <p className="text-sm text-[var(--text)]/60">Voxel model editor</p>
+            </Link>
+            <Link href="/platform" className="p-4 bg-[var(--sidebar-bg)] border border-[var(--border)] rounded-lg text-center hover:border-[var(--primary)] transition-colors">
+              <p className="font-semibold">Platform</p>
+              <p className="text-sm text-[var(--text)]/60">Our own features</p>
+            </Link>
+            <Link href="/platform/code-lab" className="p-4 bg-[var(--sidebar-bg)] border border-[var(--border)] rounded-lg text-center hover:border-[var(--primary)] transition-colors">
+              <p className="font-semibold">Code Lab</p>
+              <p className="text-sm text-[var(--text)]/60">Monaco + autocomplete</p>
+            </Link>
+            <Link href="/platform/bloxdbench" className="p-4 bg-[var(--sidebar-bg)] border border-[var(--border)] rounded-lg text-center hover:border-[var(--primary)] transition-colors">
+              <p className="font-semibold">Bench Internals</p>
+              <p className="text-sm text-[var(--text)]/60">Three.js voxel studio</p>
+            </Link>
+            <Link href="/platform/ai" className="p-4 bg-[var(--sidebar-bg)] border border-[var(--border)] rounded-lg text-center hover:border-[var(--primary)] transition-colors">
+              <p className="font-semibold">Free AI</p>
+              <p className="text-sm text-[var(--text)]/60">No key needed</p>
+            </Link>
+            <Link href="/platform/data" className="p-4 bg-[var(--sidebar-bg)] border border-[var(--border)] rounded-lg text-center hover:border-[var(--primary)] transition-colors">
+              <p className="font-semibold">Data Pipeline</p>
+              <p className="text-sm text-[var(--text)]/60">Auto-discovery</p>
             </Link>
           </div>
         </section>
